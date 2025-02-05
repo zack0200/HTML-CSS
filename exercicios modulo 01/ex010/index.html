@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+   <h1>Usando links externos</h1> 
+   <p>você pode acessar o meu <a href="https//podetudo.com.br" target="_blank" rel="external"> repositório público no Github</a></p>
+   <!--È recomendavel usar target="_blank" e rel="external" na hora de levar para outros sites porque sempre que o site for abrir ele abri em uma aba nova-->
+   <p>você também pode acessar o meu <a href="youtube.com" target="_blank" rel="external">canal gratuito no youtube</a></p>
+   <!-- São links externos links para canais externos-->
+    <h2>Usando links internos</h2>
+    <!--isto é um link interno para funcionar a página nesse caso a pag002 deve estar na mesma pasta do index-->
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+    <!--usamos target="self" para quando o link for um clicado dentro da sua propria página, self significa na propria aba -->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html"rel="next" target="_self">página de  notícias</a></p>
+    <!--caso o arquivo esteja dentro de uma pasta você tem que informar o caminho da pasta exemplo "noticias/pag003.html"-->
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livros/" download="meulivro.pdf"type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livros/meulivro.zip"download="meulivro.zip" type="application/zip">Livro compactado em zip</a></li>
+    </ul>
+</body>
+</html>

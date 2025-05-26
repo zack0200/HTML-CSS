@@ -54,6 +54,9 @@ section{
     font-family: var(--font3);
     font-size: 3.5vw;
 }
+section > p{
+    padding-bottom:2em ;
+}
 section.normal{
     background-color: white;
     color: black;
@@ -61,11 +64,22 @@ section.normal{
 section.image{
     background-color: gray;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.image >p{
     display:inline-block ;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.158);
+    text-shadow: 1px 1px 0px black;
+}
+section#img01{
+background-image: url(../desafio/boat200.jpg);
+background-position: right center ;
+}
+section#img02{
+background-image :url(../desafio/image500.png);
 }
 footer{
     background-color: black;

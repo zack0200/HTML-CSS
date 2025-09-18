@@ -11,6 +11,7 @@
        table{
         width: 500px;
         border-collapse:collapse ;
+        position: relative;
        }
         td, th {
             border: 1px solid black;
@@ -26,6 +27,21 @@
             background-color: gray;
             color: white;
         }
+        thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: gray;
+        }
+        tbody > tr:nth-child(2n-1){
+            background-color: white;
+text-decoration: underline;
+        }
+        tbody > tr:nth-child(2n) {
+background-color: lightgray;
+font-weight: bold;
+
+        }
+            /*para colocar o efeito zebrado tambem podemos colocar no lugar do (2n) (odd) ou (2n-1) que são inpar ou (even) ou (2n) que é par*/
         td.num{
             text-align: right;
         }
@@ -168,5 +184,8 @@
                     </tr>
                     </tfoot>
         </table>
+        <!--texto para testa rolagem da tabela e como a tabela se comporta com os teste-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum fuga ullam adipisci assumenda libero accusamus expedita, quaerat eaque quidem autem. Ipsa itaque rem iusto obcaecati. Deserunt accusamus voluptates aliquid! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae cum quod et doloremque laudantium minima ipsa totam tempore consequatur, vero sit iste quidem minus saepe enim facilis. Est, velit. Libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, hic. Minima aliquid quia repudiandae earum. Nulla officia, molestias ratione consequatur itaque dignissimos fuga aliquam minus libero vitae non excepturi accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolor, debitis, dolorem, reiciendis maiores nostrum quae tempora nam odio ipsa deserunt explicabo sequi autem voluptatem fugiat. Inventore necessitatibus ipsum sint.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum fuga ullam adipisci assumenda libero accusamus expedita, quaerat eaque quidem autem. Ipsa itaque rem iusto obcaecati. Deserunt accusamus voluptates aliquid! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae cum quod et doloremque laudantium minima ipsa totam tempore consequatur, vero sit iste quidem minus saepe enim facilis. Est, velit. Libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, hic. Minima aliquid quia repudiandae earum. Nulla officia, molestias ratione consequatur itaque dignissimos fuga aliquam minus libero vitae non excepturi accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolor, debitis, dolorem, reiciendis maiores nostrum quae tempora nam odio ipsa deserunt explicabo sequi autem voluptatem fugiat. Inventore necessitatibus ipsum sint.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum fuga ullam adipisci assumenda libero accusamus expedita, quaerat eaque quidem autem. Ipsa itaque rem iusto obcaecati. Deserunt accusamus voluptates aliquid! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae cum quod et doloremque laudantium minima ipsa totam tempore consequatur, vero sit iste quidem minus saepe enim facilis. Est, velit. Libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, hic. Minima aliquid quia repudiandae earum. Nulla officia, molestias ratione consequatur itaque dignissimos fuga aliquam minus libero vitae non excepturi accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolor, debitis, dolorem, reiciendis maiores nostrum quae tempora nam odio ipsa deserunt explicabo sequi autem voluptatem fugiat. Inventore necessitatibus ipsum sint.</p>
 </body>
 </html>
